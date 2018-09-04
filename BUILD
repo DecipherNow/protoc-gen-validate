@@ -1,7 +1,6 @@
-load("@io_bazel_rules_go//go:def.bzl", "gazelle", "go_binary", "go_library", "go_prefix")
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+load("@bazel_gazelle//:def.bzl", "gazelle")
 load("//bazel:go_proto_library.bzl", "go_google_protobuf")
-
-go_prefix("github.com/lyft/protoc-gen-validate")
 
 gazelle(
     name = "gazelle",
